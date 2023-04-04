@@ -53,7 +53,7 @@ int main()
     }
 
     printf("Filled the bag with objects worth Rs. %.2f\nResultant Vector: ", total_profit);
-    for (int i = 0; i < no_items; i++)
+    for (i = 0; i < no_items; i++)
     {
         printf("|%.2f| ", used[i]);
     }

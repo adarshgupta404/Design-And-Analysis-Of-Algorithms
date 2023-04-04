@@ -20,9 +20,17 @@ int bSearch(int *arr, int l, int h, int x)
 
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int x = 5;
-    cout << "The Element is present at index " << bSearch(arr, 0, n - 1, x);
+    printf("Binary Search\n");
+    printf("Enter the number of Elements : ");
+    int n;
+    int x;
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter the Elements : ");
+    for (int i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+    printf("Enter the number to be searched : ");
+    scanf("%d",&x); 
+    printf("The Element is present at index %d", bSearch(arr, 0, n - 1, x));
     return 0;
 }
